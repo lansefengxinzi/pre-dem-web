@@ -125,7 +125,7 @@ export class MessagesStore {
 
         } else { // 立即发送
             this.store.push(message);
-            this.parent.transfers.forEach((transfer) => transfer.send(message))
+            this.parent.transfers.forEach((transfer) => transfer.sendArray([message]))
         }
 
 

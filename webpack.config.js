@@ -31,16 +31,4 @@ module.exports = {
 
     ]
   },
-
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      output: {
-        comments: false
-      }
-    }),
-  ],
-    devServer: {
-    port: "9000",
-    historyApiFallback: true,
-},
 }
