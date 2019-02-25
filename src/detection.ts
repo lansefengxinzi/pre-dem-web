@@ -2,7 +2,7 @@ declare const global: any
 
 import {
   isUndefined, isObject, isError, isNil
-} from './utils'
+} from '../../private/pre-dem-web/src/utils'
 
 export const _window = !isUndefined(window) ? window
               : !isUndefined(global) ? global
